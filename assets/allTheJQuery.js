@@ -18,6 +18,4 @@ $("#events").on("click", function(){
 $(document).ready(function(){
     $( "#navbar_div" ).load( "./navbar.html"); 
     $("#footer_div").load("./footer.html");
-}); 
-    $("#footer_div").load("footer.html");
-}); 
+});  
