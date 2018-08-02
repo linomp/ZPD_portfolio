@@ -83,14 +83,14 @@ body{
 }
 
 #info_contacto{
-    max-width: 60%;
+    max-width: 80%;
     margin: 0 auto;
-    padding: 40px;
+    padding: 0px;
     padding-bottom: 20px;
 }
 
 #send-email-static{
-    max-width: 60%;
+    max-width: 80%;
     margin: 0 auto;
-    padding: 40px; 
+    padding: 0px; 
 }
