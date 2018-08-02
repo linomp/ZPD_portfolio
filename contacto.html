@@ -21,64 +21,86 @@
   <body>  
     
     <div id='navbar_div'></div>  
+        
     
-    
-    
-    <div class="container">  
-        <div id="info_contacto">
-           <h1 class="embedded_email_header">
-               Póngase en Contacto&nbsp;&nbsp;<i class="fas fa-address-card"></i>
-           </h1>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <i class="fas fa-mobile-alt"></i>
-                    &nbsp;/&nbsp;
-                    <i class="fab fa-whatsapp"></i>&nbsp;&nbsp;
-                    <span class="phone_number">+593&nbsp;95-898-9447</span>
-                </li>
-                <li class="list-group-item">
-                    <i class="fas fa-phone"></i>&nbsp;&nbsp; 
-                    (05)&nbsp;2-677-189
-                </li>
-                <li class="list-group-item">
-                    <i class="far fa-envelope"></i>&nbsp;&nbsp; 
-                    zoilavioleta@gmail.com
-                </li>
-            </ul>                
-        </div>         
+    <div class="container"> 
+        <div class="row">
+            <div class="col col-lg-2 col-md-2 col-sm-0 col-xs-0"> </div>  
+            <div class="col col-lg-8 col-md-8 col-sm-12 col-xs-12">             
+                <div class="card">
+                  <div class="card-header">
+                    <h2 class="contact_info_header">
+                        Póngase en Contacto&nbsp;&nbsp;<i class="fas fa-address-card"></i>
+                    </h2>
+                  </div>
+                  <div class="card-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            &nbsp;/&nbsp;
+                            <i class="fab fa-whatsapp"></i>&nbsp;&nbsp;
+                            <span class="phone_number">+593&nbsp;95-898-9447</span>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-phone"></i>&nbsp;&nbsp; 
+                            (05)&nbsp;2-677-189
+                        </li>
+                        <li class="list-group-item">
+                            <i class="far fa-envelope"></i>&nbsp;&nbsp; 
+                            zoilavioleta@gmail.com
+                        </li>
+                    </ul>    
+                  </div>
+                </div>  
+            </div>
+            <div class="col col-lg-2 col-md-2 col-sm-0 col-xs-0"> </div>                
+        </div>
+        
+        <div class="row">
+            <div class="col col-lg-2 col-md-2 col-sm-0 col-xs-0"> </div>  
+            <div class="col col-lg-8 col-md-8 col-sm-12 col-xs-12"> 
+                <div id="send-email-static">
+                  <div class="card">
+                        <div class="card-header">
+                            <h2 class="embedded_email_header">
+                                Conversemos&nbsp;<i class="fas fa-comments"></i>
+                            </h2>
+                        </div>
+                        <div class="card-body">
+                            <form class="gform" id="the-form" method="POST"
+                               action="https://script.google.com/macros/s/AKfycbzULIZLrkGPM4Y218WLDEYu4Z-10CQtiuQ3ae6CdA6ChWTBMGov/exec">              
 
-        <div id="send-email-static">
-           <h1 class="embedded_email_header">
-               Conversemos&nbsp;&nbsp;<i class="fas fa-comments"></i>
-           </h1>
-            <form class="gform" id="the-form" method="POST"
-               action="https://script.google.com/macros/s/AKfycbzULIZLrkGPM4Y218WLDEYu4Z-10CQtiuQ3ae6CdA6ChWTBMGov/exec">              
+                                <label class="sr-only">Keep this field blank</label>
+                                <input id="honeypot" type="text" name="honeypot" value="" /> 
 
-                <label class="sr-only">Keep this field blank</label>
-                <input id="honeypot" type="text" name="honeypot" value="" /> 
+                                <div class="form-group">
+                                    <label for="name">Nombre: </label>
+                                    <input class="form-control" id="name" name="name"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Correo electrónico:</label>
+                                    <input class="form-control" id="email" name="email" type="email" value="" required/>
+                                    <span class="email-invalid" style="display:none">
+                                    Por favor Ingrese un Correo electrónico válido</span>
+                                </div> 
+                                <div class="form-group">
+                                    <label for="message">Mensaje: </label>
+                                    <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                                </div> 
+                                <button class="btn" id="send_btn">Enviar</button>
 
-                <div class="form-group">
-                    <label for="name">Nombre: </label>
-                    <input class="form-control" id="name" name="name"/>
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo electrónico:</label>
-                    <input class="form-control" id="email" name="email" type="email" value="" required/>
-                    <span class="email-invalid" style="display:none">
-                    Por favor Ingrese un Correo electrónico válido</span>
+                                <div id="mail_success_msg" style="display:none;">
+                                    <h4>Su mensaje ha sido enviado!</h4>
+                                </div> 
+
+                            </form>
+                        </div>    
+                    </div>
                 </div> 
-                <div class="form-group">
-                    <label for="message">Mensaje: </label>
-                    <textarea class="form-control" id="message" name="message" rows="5"></textarea>
-                </div> 
-                <button class="btn" id="send_btn">Enviar</button>
-
-                <div id="mail_success_msg" style="display:none;">
-                    <h4>Su mensaje ha sido enviado!</h4>
-                </div> 
-
-            </form>
-        </div> 
+            </div> 
+            <div class="col col-lg-2 col-md-2 col-sm-0 col-xs-0"> </div>                
+        </div>
+        
     </div>     
     
     

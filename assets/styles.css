@@ -77,20 +77,14 @@ body{
     padding-bottom: 20px;
 }
 
+.contact_info_header{
+    text-align: center; 
+}
+
 .embedded_email_header{
-    text-align: center;
-    padding-bottom: 20px;
+    text-align: center; 
 }
-
-#info_contacto{
-    max-width: 95%;
-    margin: 0 auto;
-    padding: 0px;
-    padding-bottom: 20px;
-}
-
-#send-email-static{
-    max-width: 95%;
-    margin: 0 auto;
-    padding: 0px; 
+ 
+#send-email-static{ 
+    padding-top: 50px;
 }
