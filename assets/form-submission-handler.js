@@ -1,3 +1,6 @@
+// Google Sheets script & base version of this script taken from the following public repo:
+// https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server
+
 (function() {
   function validEmail(email) {
     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
