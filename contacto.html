@@ -23,7 +23,42 @@
     <div id='navbar_div'></div>  
     <div class="container">  
         
-        Contacto            
+           <!--
+            <form class="gform" id="the-form" method="POST"
+               action="https://script.google.com/macros/s/AKfycbwtyfFjfKupDXBzAJmVVtC5DT038MSDUDE4RGr7XG3kuIDHddnP/exec">              
+               --> 
+        
+        
+        <div id="send-email-static">
+            <form class="gform" id="the-form" method="POST"
+               action="https://script.google.com/macros/s/AKfycbzULIZLrkGPM4Y218WLDEYu4Z-10CQtiuQ3ae6CdA6ChWTBMGov/exec">              
+                
+                <label class="sr-only">Keep this field blank</label>
+                <input id="honeypot" type="text" name="honeypot" value="" /> 
+                
+                <div class="form-group">
+                    <label for="name">Nombre: </label>
+                    <input class="form-control" id="name" name="name"/>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input class="form-control" id="email" name="email" type="email" value="" required/>
+                    <span class="email-invalid" style="display:none">
+                    Por favor Ingrese un Correo electrónico válido</span>
+                </div> 
+                <div class="form-group">
+                    <label for="message">Mensaje: </label>
+                    <textarea class="form-control" id="message" name="message" rows="10" placeholder="..."></textarea>
+                </div> 
+                <button class="btn" id="send_btn">Enviar</button>
+                
+                <div id="mail_success_msg" style="display:none;">
+                    <h4>Su mensaje ha sido enviado!</h4>
+                </div> 
+                                                      
+            </form>
+        </div>            
+        
         
     </div>        
     
@@ -32,6 +67,9 @@
    
     
     <script src="assets/allTheJQuery.js"></script>    
+    <!-- Submit the Email Form to Google Using "AJAX" -->
+    <script data-cfasync="false" src="assets/form-submission-handler.js"></script>    
+
     <!-- Bootstrap JS -->    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

@@ -40,7 +40,7 @@ body{
 }
 
 #mp_github_link{
-    text-decoration: none;
+    text-decoration: underline;
     color: #5b74ad;
 }
 
@@ -65,5 +65,14 @@ body{
 }
 
 #tabs-experiencia{
+    padding-bottom: 20px;
+}
+
+#honeypot {
+  display: none; /*makes the field not visible to humans*/
+}
+
+#mail_success_msg{
+    padding-top: 20px;
     padding-bottom: 20px;
 }
