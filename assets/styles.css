@@ -76,3 +76,21 @@ body{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.embedded_email_header{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#info_contacto{
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 40px;
+    padding-bottom: 20px;
+}
+
+#send-email-static{
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 40px; 
+}
